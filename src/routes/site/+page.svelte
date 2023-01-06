@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import axios from 'axios';
 	import { DataTable } from "carbon-components-svelte";
-	const endpoint = 'http://127.0.0.1:5000/market/stock/volumeRanking?desc=1';
+	const endpoint = 'http://199.247.20.57:5000/market/stock/volumeRanking?desc=1';
 	let data = [];
 	onMount(async function () {
 		const response = await axios.get(endpoint);

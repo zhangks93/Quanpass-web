@@ -30,7 +30,7 @@
 		<Tile 
 			><Grid condensed>
 				<Row>
-					<Column><h5>{item.Name}</h5><br />{item.Code}</Column>
+					<Column><p>{item.Name}</p><br/>{item.Code}</Column>
 					<Column>{item.MktCap}<br />{item.Volume}</Column>
 					<Column>{item.Price}<br />{item.ChangePct}</Column>
 				</Row>
