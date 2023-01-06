@@ -39,7 +39,7 @@
 <SideNav bind:isOpen={isSideNavOpen}>
 	<SideNavItems>
 		<SideNavLink text="Home" href="/" />
-		<SideNavLink text="Market" href="/about" />
+		<SideNavLink text="Market" href="/market" />
 		<SideNavLink text="Robot" href="/site" />
 		<SideNavMenu text="Menu">
 			<SideNavMenuItem text="Message" href="/" />
