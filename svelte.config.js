@@ -9,6 +9,11 @@ const config = {
 
 	kit: {
 		adapter: adapter()
+	},
+	vite: {
+		ssr: {
+			noExternal: ['svelte-lightweight-charts', 'lightweight-charts']
+		}
 	}
 };
 

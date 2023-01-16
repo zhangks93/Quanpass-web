@@ -11,16 +11,17 @@
 		SideNavMenu,
 		SideNavMenuItem,
 		SideNavLink,
-		SkipToContent
+		SkipToContent,
+		Button
 	} from 'carbon-components-svelte';
 	let isOpen = false;
-	let isSideNavOpen = true;
+	let isSideNavOpen = false;
 </script>
 
-<Header platformName="Quanpass" bind:isSideNavOpen>
+<Header company="IBM" platformName="Carbon Svelte" bind:isSideNavOpen persistentHamburgerMenu={true}>
 	<svelte:fragment slot="skip-to-content">
-		<SkipToContent />
-	</svelte:fragment>
+    <SkipToContent />
+  </svelte:fragment>
 	<HeaderUtilities>
 		<HeaderAction bind:isOpen>
 			<HeaderPanelLinks>
@@ -33,9 +34,10 @@
 				<HeaderPanelLink>Switcher item 4</HeaderPanelLink>
 				<HeaderPanelLink>Switcher item 5</HeaderPanelLink>
 			</HeaderPanelLinks>
-		</HeaderAction>
+		</HeaderAction>	
 	</HeaderUtilities>
 </Header>
+
 <SideNav bind:isOpen={isSideNavOpen}>
 	<SideNavItems>
 		<SideNavLink text="Home" href="/" />

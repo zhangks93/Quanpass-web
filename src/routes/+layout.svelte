@@ -11,13 +11,13 @@
 		'hover-primary': '#ee5396',
 		'active-primary': '#9f1853'
 	}}
-/>
-<div class="app">
-	<Header />
-	<Content>
-		<main><slot /></main>
-	</Content>
-</div>
+	><div class="app">
+		<Header />
+		<Content>
+			<main><slot /></main>
+		</Content>
+	</div>
+</Theme>
 
 <style>
 	.app {
@@ -32,7 +32,7 @@
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
+		max-width: 80rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
