@@ -8,8 +8,12 @@ const AppSidebar = () => {
     const model = [
         {
             label: 'Home',
-            items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' },
-            { label: 'Market', icon: 'pi pi-fw pi-home', to: '/market' }]
+            items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/' }]
+        },
+        {
+            label: 'Crypto',
+            items: [{ label: 'Market', icon: 'pi pi-fw pi-home', to: '/crypto/market' },
+            { label: 'Robot', icon: 'pi pi-fw pi-home', to: '/crypto/robot' },]
         },
         {
             label: 'UI Components',

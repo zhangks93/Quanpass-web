@@ -1,6 +1,6 @@
 import React, { useState, useEffect, } from 'react';
 import { DataView, } from 'primereact/dataview';
-import { MarketService } from '../../service/MarketService';
+import { MarketService } from '../../../service/MarketService';
 import { Dropdown } from 'primereact/dropdown';
 import { InputSwitch } from 'primereact/inputswitch';
 import { Toolbar } from 'primereact/toolbar';
@@ -41,7 +41,7 @@ const Market = () => {
         }
 
         return (
-            <Link href="/security" >
+            <Link href={`/crypto?code=${data.Code}`} >
             <div className="flex flex-column md:flex-row p-3 w-full" >
                 <div className="flex-1 flex flex-column text-left">
                     <div className="font-bold text-xl">{data.Name}</div>
